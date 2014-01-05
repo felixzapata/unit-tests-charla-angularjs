@@ -1,4 +1,4 @@
-Ejemplos utilizados en el meetup de AngularJS sobre realización de tests unitarios con AngularJS 
+Ejemplos utilizados en el meetup de AngularJS sobre realización de tests unitarios
 =======================
 
 ##Requisitos
