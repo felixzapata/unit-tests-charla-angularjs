@@ -1,0 +1,17 @@
+<table summary="">
+	<thead>
+		<tr>
+			<th>ID</th>
+			<th>Latitud</th>
+			<th>Longitud</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr ng-repeat="coordinate in coordinates">
+			<td ng-bind="coordinate.id"></td>
+			<td ng-bind="coordinate.latitude"></td>
+			<td ng-bind="coordinate.longitude"></td>
+		</tr>
+	</tbody>
+</table>
+
