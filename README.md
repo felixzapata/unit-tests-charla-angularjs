@@ -21,6 +21,9 @@ ejecutamos `grunt test`o `grunt karma:unit`
 ## Enlaces de interés
 * [How to Unit Test Controllers In AngularJS Without Setting Your Hair On Fire](http://nathanleclaire.com/blog/2013/12/13/how-to-unit-test-controllers-in-angularjs-without-setting-your-hair-on-fire/)
 * [Advanced Testing and Debugging in AngularJS](http://www.yearofmoo.com/2013/09/advanced-testing-and-debugging-in-angularjs.html)
+* [Why do you need to write tests?](http://andyshora.com/unit-testing-best-practices-angularjs.html)
+* [Testing Strategies for Angular JS?](http://www.youtube.com/watch?v=UYVcY9EJcRs)
 * [How can I simulate a click event in my AngularJS directive test?](http://stackoverflow.com/questions/17211466/how-can-i-simulate-a-click-event-in-my-angularjs-directive-test)
 * [Chai Assertion Library](http://chaijs.com/)
+
 
