@@ -1,8 +1,8 @@
 /*global module, inject, describe, beforeEach, it, expect*/
-(function() {
+(function () {
     'use strict';
 
-    describe('Directive: myCoordinates', function() {
+    describe('Directive: myCoordinates', function () {
 
         var fakeData = [{
             'id': 'DGT7',
@@ -25,31 +25,32 @@
             'latitude': 40.4671642,
             'longitude': -3.8704629
         }],
-            $scope, element;
+            element;
 
         // load the controller's module
         beforeEach(module('views/coordinates.html'));
         beforeEach(module('dir.my.coordinates'));
-        
-        
+
+
 
         // Initialize the controller and a mock scope
-        beforeEach(function() {
-            inject(function($compile, $rootScope) {
-                $scope = $rootScope;
+        beforeEach(function () {
+            inject(function ($injector) {
+                var $scope = $injector.get('$rootScope'),
+                    $compile = $injector.get('$compile');
                 element = $compile('<my-coordinates http-coordinates="myFakeCoordinates"></my-coordinates>')($scope);
                 $scope.myFakeCoordinates = fakeData;
                 $scope.$digest();
             });
         });
 
-        it('should have a table element', function() {
+        it('should have a table element', function () {
             expect(element[0].nodeName).to.equal('TABLE');
         });
-        it('should have 6 table rows', function() {
+        it('should have 6 table rows', function () {
             expect(element.find('tr').length).to.equal(6);
         });
-        it('should have 5 table columns', function() {
+        it('should have 5 table columns', function () {
             expect(element.find('td').length).to.equal(15);
         });
     });
