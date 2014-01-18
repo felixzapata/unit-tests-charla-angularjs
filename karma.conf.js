@@ -31,7 +31,8 @@ module.exports = function(config) {
         },
 
         ngHtml2JsPreprocessor: {
-            stripPrefix: 'app/'
+            stripPrefix: 'app/',
+            moduleName: 'templates'
         },
 
         // list of files / patterns to exclude

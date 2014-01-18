@@ -28,7 +28,8 @@
             element;
 
         // load the controller's module
-        beforeEach(module('views/coordinates.html'));
+        //beforeEach(module('views/coordinates.html'));
+        beforeEach(module('templates'));
         beforeEach(module('dir.my.coordinates'));
 
 
