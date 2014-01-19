@@ -5,7 +5,7 @@ describe('DeviceSrv Service:', function () {
 
     var DeviceSrv;
 
-    beforeEach(module('myDeviceAppB'));
+    beforeEach(module('myDeviceApp'));
 
 
     beforeEach(inject(function ($injector) {
@@ -20,7 +20,7 @@ describe('DeviceSrv Service:', function () {
             return 'foobar';
         });
         result = DeviceSrv.getUserAgent();
-        expect(result).to.equal('foobar');
+        expect(result).toBe('foobar');
     });
 });
 

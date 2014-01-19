@@ -46,13 +46,13 @@
         });
 
         it('should have a table element', function () {
-            expect(element[0].nodeName).to.equal('TABLE');
+            expect(element[0].nodeName).toBe('TABLE');
         });
         it('should have 6 table rows', function () {
-            expect(element.find('tr').length).to.equal(6);
+            expect(element.find('tr').length).toBe(6);
         });
         it('should have 5 table columns', function () {
-            expect(element.find('td').length).to.equal(15);
+            expect(element.find('td').length).toBe(15);
         });
     });
 }());

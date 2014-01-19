@@ -57,7 +57,7 @@
         }));
 
         it('should attach a list of data to the scope', function() {
-            expect(scope.myCoordinates).to.deep.equal(fakeData);
+            expect(scope.myCoordinates).toBe(fakeData);
         });
     });
 }());

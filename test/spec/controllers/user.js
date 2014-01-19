@@ -1,6 +1,6 @@
 /*global describe, beforeEach, afterEach, inject, it, expect, ddescribe, iit, xit, xdescribe, jasmine, spyOn*/
 'use strict';
-ddescribe('UserCtrl Controller:', function () {
+describe('UserCtrl Controller:', function () {
     var UserSrv, $rootScope, $controller, UserCtrl;
 
     beforeEach(module('srv.my.app'));
@@ -15,7 +15,12 @@ ddescribe('UserCtrl Controller:', function () {
                 'lastName': 'Smith'
             };
         });
-
+        /*UserSrv.getName = jasmine.createSpy('getUser spy').andCallFake(function () {
+            return {
+                'name': 'John',
+                'lastName': 'Smith'
+            };
+        });*/
     }));
 
     it('should add full name to scope', function () {
@@ -26,6 +31,6 @@ ddescribe('UserCtrl Controller:', function () {
         });
         scope.$digest();
         expect(UserSrv.getUser).toHaveBeenCalled();
-        expect(scope.fullName).to.equal('John Smith');
+        expect(scope.fullName).toEqual('John Smith');
     });
 });

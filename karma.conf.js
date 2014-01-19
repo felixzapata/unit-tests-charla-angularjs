@@ -20,7 +20,6 @@ module.exports = function(config) {
             'app/bower_components/chai/chai.js',
             'app/scripts/*.js',
             'app/scripts/**/*.js',
-            'test/lib/*.js',
             'test/spec/**/*.js',
             'app/views/*.html'
         ],

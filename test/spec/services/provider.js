@@ -28,11 +28,11 @@ describe('myAppConfig Service:', function () {
     describe('Provider Test', function () {
 
         it('should exists', function () {
-            expect(testProvider).to.not.empty;
+            expect(testProvider).not.toBeNull();
         });
 
         it('should have parameters', function () {
-            expect(myAppConfig.getMyDataConfig()).to.deep.equal(dataConfigProvider);
+            expect(myAppConfig.getMyDataConfig()).toBe(dataConfigProvider);
         });
 
     });

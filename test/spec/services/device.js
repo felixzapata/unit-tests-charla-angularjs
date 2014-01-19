@@ -32,7 +32,7 @@ describe('DeviceSrv Service:', function () {
         var result;
         stub.navigator.userAgent = userAgents.test;
         result = DeviceSrv.getUserAgent();
-        expect(result).to.equal('foobar');
+        expect(result).toBe('foobar');
     });
 });
 

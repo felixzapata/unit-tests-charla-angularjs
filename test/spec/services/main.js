@@ -41,7 +41,7 @@
             var result;
             httpService.getCoordinates().then(function(data) {
                 result = data;
-                expect(result).to.deep.equal(fakeData);
+                expect(result).toEqual(fakeData);
             });
             $httpBackend.flush();
         });
